@@ -1,5 +1,6 @@
 import axios from "axios";
 
-export default axiosInstance = axios.create({
+//axiosInstance
+export const axiosInstance = axios.create({
     baseURL : "https://webblog-mern.herokuapp.com/api/"
 });
