@@ -17,7 +17,8 @@ app.use("/images", express.static(path.join(__dirname, "/images")));
 const connectDatabase = async () => {
     try {
       const { connection } = await mongoose.connect(process.env.MONGO_URL);
-      console.log(`MongoDB connected: ${connection.host}`);
+      //console.log(`MongoDB connected: ${connection.host}`);
+      console.log("!!!!!!!!!!!!connected to database!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
     } catch (error) {
       console.log(error);
       process.exit(1);
