@@ -5,7 +5,7 @@ import "./topbar.css";
 
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
-  const PF = "http://localhost:4000/images/"
+  const PF = "https://webblog-mern.herokuapp.com/images/";
 
   const handleLogout = () => {       // handling the logout button click
     dispatch({ type: "LOGOUT" });
